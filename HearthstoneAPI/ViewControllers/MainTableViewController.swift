@@ -19,6 +19,7 @@ class MainTableViewController: UITableViewController {
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
         tableView.rowHeight = 250
+        tableView.allowsSelection = false
 
         NetworkManager.getCards { cards in
             self.cards = cards
